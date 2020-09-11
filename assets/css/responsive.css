@@ -1,111 +1,16 @@
-
-/* Para mobile */
-    @media screen and (max-width: 360px){
-        .slider-main{
-            margin-top:-248px;}
-    }
-/* para tablet */
-
-    @media screen and (min-width: 361px){
-        /* Header--tablet */
-        .main-header__logo{
-            margin: auto;
-            width: 50%;
-            height: 80%;
-        }
-        .main-header{
-            display: grid;
-            grid-template-columns: 1fr 1fr ;
-            grid-template-rows: 50px 200px 50px;
-            justify-content: center;
-            align-items: center;   
-        }
-        .slider-main{
-            margin-top:-248px;}
-    }
-/* para laptop */
-    @media screen and (min-width: 1024px){
-            /* header- lapto */
-            .top-bar{
-                display: none;
-            }
-            .main-header{
-                display: grid;
-                grid-template-columns: 0.5fr 1fr 0.4fr ;
-                grid-template-rows: 100px;
-                justify-content: center;
-                align-items: center;   
-            }
-            .main-header__logo{
-                width: 100%;
-                margin-left: 50px; 
-            }
-            /* barra del menu */
-            .top-bar{
-                margin-right: 0px;
-            }
-            /* barra de navegacion */
-            .toggle{
-                top: 0;
-                grid-column: 2/3;
-                grid-row: 1;
-                background-color: rgba(146, 143, 143, 0);
-                transform: translateX(0);
-                transition:transform .3s;
-                position: relative
-            }
-            .menu2{
-                /* reset list */
-                list-style: none;
-                padding-left: 0;
-                margin-top: 0;
-                margin-bottom: 0;
-                /* otros estilos */
-                display: flex;
-                height: 100%;
-                justify-content: center;
-                align-items: center;
-                /* margin-top: 100px; */
-            }
-            .menu__link{
-                text-decoration: none;
-                color: var(--dark-color);
-                display: inline;
-                text-align:start;
-                margin: 3px;
-                background-color: rgba(255, 255, 255, 0);
-                padding-left: 2em;
-                font-size: 1.1em;
-                
-            }
-            .toggle {
-                height: 100%;
-            }
-            .menu2{
-                padding: 0;
-            }
-            /* parte del contacto */
-            .main-contacto{
-                grid-column: 3/4;
-                grid-row: 1;
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-                background-color: rgba(101, 102, 101, 0);
-                transform: translateX(0);
-                transition:transform .10s;  
-            }
-            .main-contacto__link{
-                color: var(--second-color);
-            }
-            .slider-main{
-                margin-top:0px;
-            }
-    }
-/* para desktop */
-    @media screen and (min-width: 1400px) {
-        
-    }
-
-
-        
+/*----- DESKTOP FIRST */
+/* RWD Tablet */
+@media screen and (max-width: 800px) {
+}
+/* RWD MOBILE */
+@media screen and (max-width: 580px) {
+}
+/*----- MOBILE FIRST */
+/* @media screen and (min-width: 780px) {
+  .activaestilosDe780 {
+  }
+}
+@media screen and (min-width: 1024px) {
+  .activaEstilosde1024 {
+  }
+} */
