@@ -1,0 +1,90 @@
+@font-face{
+	src: url(../Font/valencia-serial-bold.ttf);
+	font-family: 'myFont';
+  }
+@font-face{
+	src:url(../Font/Netflix-Sans-Light.otf);
+	font-family:'myFont2';
+}
+@font-face{
+	src:url(../Font/Netflix-Sans-Medium.otf);
+	font-family:'myFont3';
+}
+.body{
+    background: url('../img/inicio/Especialidades.jpg');
+    background-size: cover;
+    background-position: cover;
+}
+.main-espe{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.main-espe h1{
+    text-align: center;
+    color: white;
+    font-family:'myFont1'
+    
+}
+.main-espe p{
+    text-align: center;
+    color: white;
+    font-family:'myFont2';
+}
+.main-espe__titulo{
+    
+}
+.main-espe__img{
+    width: 70px;
+    height: 100px;
+}
+.main-tipos{
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit ,154px);
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        width: 85%;
+        margin: auto;
+        grid-column-gap: 100px;
+        grid-row-gap: 10px;
+        margin-top: 50px;
+        
+        
+}
+.main-tipos__box{
+    width: 240px;
+    background-color: #fff;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px ;
+}
+.main-tipos__box img{
+    width: 40px;
+    height: 40px;
+    
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin-left: 30px;
+}
+.main-tipos__box h1{
+    font-size: 0.9em;
+    color: var(--second-color);
+}
+.main-tipos__box .line{
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin-left: 30px;
+}
+

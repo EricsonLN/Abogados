@@ -1,0 +1,94 @@
+
+/* Slider Main */
+
+/* Slider Main */
+.slider-main{
+	margin-top:0px;
+	height: 700px;
+	margin-bottom: 9.3333333em;
+}
+.slider-main__item{
+	position: relative;
+}
+.fit-cover{
+	height: 100vh;
+}
+.slider-main__figure{
+    height: 100%;
+    margin: 0;
+}
+.s-main__text-title--active, 
+.slider-main__text-title{
+	font-family: 'myFont';
+}
+.main-contenido__text{
+	font-family: 'myFont';
+}
+.slider-main__text{
+	position: absolute;
+    /* width: 35%; */
+    height: auto;
+    z-index: 1;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+	color: white;
+}
+
+.s-main__text-title--active{
+	font-size: 1.1em;
+	margin: 0;
+}
+.s-main__text-title{
+    font-size: 2%;
+	margin: 0;
+}
+.slider-main__text-title{
+    font-size: 2em;
+	margin: 0;
+}
+
+.slider-main__text-box{
+	border: 1px solid white;
+	font-size: 15px;
+	letter-spacing: .4em;
+    padding: .5em 1.5em;
+    background-color: white;
+    color: red;
+    margin-top: 10px;
+	display: inline-block;
+}
+.main-contenido__textp{
+	font-family:'myFont2';
+}
+	/* Slicks */
+	.slider-main .slick-prev,
+	.slider-main .slick-next{
+		/* --size-arrow: 40px; */
+		height: var(--size-arrow);
+		width: var(--size-arrow);
+		transition: .3s all ease-in-out;
+		z-index: 9;
+		top: 60%;
+	}
+	.slider-main .slick-prev{
+		left: 4%;
+	}
+	.slider-main .slick-next{
+		right: 4%;
+	}
+	.slider-main .slick-prev::before, .slider-main .slick-next::before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-image: url(../img/resources/arrow-prev.svg);
+		background-position: left center;
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 200%;
+	} 
+	 .slider-main .slick-next::before{
+		transform: rotateY(180deg);
+	}

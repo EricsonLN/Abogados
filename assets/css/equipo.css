@@ -1,0 +1,75 @@
+.fondo{
+  background: rgb(206, 202, 202);
+  
+}
+.titulo{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo img{
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+.titulo h1 .line{
+    width: 100%;
+    margin-top: 10px;
+}
+.equipo-text{
+  color: var(--primary-color);
+  
+  font-family: 'myFont';
+}
+
+/* Informacion sobre los equipos */
+.main-socios{
+  display: grid;
+  width: 90%;
+  margin-top: 20px;
+  font-family: 'myFont1';
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(auto-fit,170px);
+  grid-template-rows: 500px;
+  grid-auto-rows: 500px;
+  justify-content: center;
+  grid-gap: 80px;
+  
+}
+
+.main-socios-box{
+  width: 210px;
+}
+.main-socios-box img{
+  width: 100%;
+  height: 50%;
+  position: relative;
+  
+  margin-right: auto;
+}
+
+.main-socios__nombre{
+  background: var(--second-color);
+  padding: 0.2em;
+  color: white;
+}
+.main-socios__nombre p{
+  text-align: center;
+  color: white;
+}
+
+.main-socios-box p{
+  text-align: center;
+  
+}
+.equipo-parafo{
+  color: var(--dark-color);
+}
+.main-socios__nombre--active{
+  background: var(--primary-color);
+}
+
+
+
