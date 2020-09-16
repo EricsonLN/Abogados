@@ -1,0 +1,137 @@
+@font-face {
+    src: url("../Font/Netflix-Sans-Light.otf");
+    font-family: "netflix-light";
+  }
+  @font-face {
+    src: url("../Font/Netflix-Sans-Medium.otf");
+    font-family: "netflix-medium";
+  }
+  @font-face {
+    src: url("../Font/valencia-serial-bold.ttf");
+    font-family: "valencia-bold";
+  }
+  
+  :root {
+    --main-title: "valencia-bold";
+    --main-font: "netflix-medium";
+    --primary-color: rgb(190, 45, 42);
+    --secondary-color: rgb(182, 140, 84);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  figure {
+    margin: 0em;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-size: 1.6rem;
+  }
+  span {
+    color: inherit;
+  }
+  p,
+  li,
+  a {
+    font-family: var(--main-font);
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .container {
+    max-width: 117rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* HEADER */
+  body{
+    background-color: #f5f6f6;
+  }
+  .header {
+    background-color: #f5f6f6;
+    padding: 4rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    /* padding: 30px 0; */
+  }
+  .header::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7.5rem;
+    height:100%;
+    z-index: 201;
+    background: var(--primary-color);
+  }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+  }
+  .header__logo {
+    width: 18rem;
+  }
+  .header__information {
+    display: flex;
+    align-items: center;
+  }
+  .header__telephone {
+    color: var(--primary-color);
+    margin-right: 2rem;
+  }
+  /* MAIN-MENU */
+.main-menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  .main-menu__item {
+    margin-left: 3rem;
+    color: rgb(131, 131, 131);
+  }
+  .main-menu__item:first-child {
+    margin-left: 0;
+  }
+  
+  /* SOCIAL NETWORKS */
+  .social-networks {
+    display: flex;
+    align-items: center;
+  }
+  .social-networks__item {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    border: 0.1rem solid var(--secondary-color);
+    color: var(--secondary-color);
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    margin-right: 2.9rem;
+  }
+  .social-networks__item:first-child {
+    margin-left: 0;
+    margin-right: 0;
+    /* margin-right: -5rem; */
+    
+  }
+
+  /* estilos de la franja */
+
+  

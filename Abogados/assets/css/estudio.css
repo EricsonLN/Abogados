@@ -1,0 +1,69 @@
+/* Conetenido de index */
+.main-contenido{
+  width: 100%;
+  display:flex;
+  background-color: #f5f6f6;
+ justify-content: center;
+ align-items: center;
+ padding-top: 2rem;
+ position: relative;
+  
+}
+
+.main-contenido::before{
+  content:'';
+  display: block;
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  width: 7.5rem;
+  height: 106.3%;
+  background: var(--primary-color);
+  z-index: 100;
+  
+}
+
+.section-contenido{
+  width: 80%;
+  padding: 5em;
+  display: flex;
+  justify-content: center;
+  flex-direction:column ;
+  align-items: center;
+}
+/* logo */
+.main-logo--active{
+  max-width: 100%;
+}
+.main-logo--active{
+  width: 4rem;
+  align-self: center;
+}
+
+/* icono con texto */
+.main-logo{
+  width: 40%;
+  align-self: center;
+}
+.main-logo--edit{
+  width: 60%;
+}
+
+.main-logo{
+    max-width: 100%;
+}
+
+/* text */
+
+.main-contenido__tittle{
+  text-align: center;
+  font-family: var(--main-title);
+  font-size: 3rem;
+  color: #363636;
+}
+.main-contenido__textparra{
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "netflix-light";
+  color: #4b4b4d;
+}

@@ -1,7 +1,19 @@
-const iconMenu =document.getElementById('icon-menu');
-const mainMenu= document.getElementById('main-menu2');
-const mainConta= document.getElementById('main-contacto');
+const topbar = document.getElementById('topbar')
 
-iconMenu.addEventListener('click',()=>mainMenu.classList.toggle('menu2--show'));
+const menu=document.getElementById('sidebar')
 
-iconMenu.addEventListener('click',()=>mainConta.classList.toggle('menu2--show'));
+const cerrar=document.getElementById('cerrar')
+
+if(topbar){
+    topbar.addEventListener('click',(e)=>{
+        if(e.target.parentElement.dataset.type!=undefined){
+            menu.classList.add('main-nav__show')
+        }
+    } )
+}
+
+if(menu){
+    cerrar.addEventListener('click',(e)=>{
+        menu.classList.remove('main-nav__show')
+    })
+}

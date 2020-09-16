@@ -1,10 +1,465 @@
 /*----- DESKTOP FIRST */
 /* RWD Tablet */
 @media screen and (max-width: 800px) {
+
+  /* img de titulos */
+
+
+
+  /* barra de whatsapp */
+
+  .slider-main__whatsapp{
+    right: -10rem;
+  }
+    /*barraya de la derecha reponse  */
+
+    .slider-main::before{
+      display: none;
+    }
+    .header::before{
+      display: none;
+    }
+    .main-contenido::before{
+      display: none; 
+    }
+
+    /* parte del header */
+    .main-menu,.header__information{
+      display: none;
+    }
+    /* parte del footer */
+    .footer-box1{
+      display: none;
+    }
+    .footer{
+      background-color: #f5f6f6;
+      border-top: 1px solid rgb(160, 157, 157);
+    }
+    .footer-box2{
+      background-color: #f5f6f6;
+    }  
+    /* slider */
+
+    .slider-main__button{
+      margin-left: 20px;
+    }
+    .slider-main__title {
+      margin-left: 20px;
+    }
+
+    /* primera especialidad */
+    /* Para contacto */
+    .main-contenido__general--img{
+      width: 80%;
+    }
+
+    .main-contacto__formularios{
+        margin-right: 60px;
+        padding-bottom: 1rem;
+    }
+     /* parte del footer */
+     .footer-box1{
+      display: none;
+    }
+    .footer{
+      
+      grid-template-columns: 100%;
+      
+      
+    }
+    /* especialidad 1 */
+.main-espe1__content{
+  grid-template-columns: repeat(auto-fit,300px);
+}
+    .logo-espe1{
+      width: 5rem;
+    }
+    .main-imgesp1 img {
+      align-self: center;
+      max-width: 50%;
+  }
+  .main-text {
+    display: flex;
+    flex-direction: column ;
+    font-size: 0.5rem;
+
+  }
+.main-text__title{
+  margin-top: 10px;
+  align-self: center;
+}
+  .main-text__title h1{
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  .main-text__back{
+    width: 50%;
+    border: 2px solid #333;
+  }
+  .logo-contacto--active{
+    height: auto; 
+  }
+
+/* equipo */
+.main-socios{
+  margin-top: 12px;
+  justify-content: center;
+}
+.slick-dots li button::before{
+      
+  font-size: 1rem;
+  
+}
+.slider-main ul{
+  bottom: 5rem;
+}
+
+.socios-paragraph p{
+  text-align: center;
+  font-size: 1.3rem;
+}
+
 }
 /* RWD MOBILE */
 @media screen and (max-width: 580px) {
+  /* contacto */
+  .main-forms{
+  
+    width: 100%;
+   
+  } 
+.txtemail{
+  
+  margin-left: 10px;
 }
+.txtemail label{
+
+ margin-left: 10px;
+}
+  /* imgen de titulo */
+  .main-logo{
+    width: 90%;
+    align-self: center;
+  }
+    /*barraya de la derecha reponse  */
+
+    .slider-main::before{
+      display: none;
+    }
+    .header::before{
+      display: none;
+    }
+    .main-contenido::before{
+      display: none; 
+    }
+
+    /* silder */
+  .slider-main ul{
+    bottom: -0.1rem;
+  }
+    .header-menu{
+      align-self: center;
+      margin-right: 10px;
+    }
+
+    .slick-dots li button::before{
+      
+      font-size: 0.8rem;
+      
+    }
+    /* parte del header */
+    .main-menu,.header__information{
+      display: none;
+    }
+    .header{
+      height: 50px;
+      padding: 0;
+    }
+    .header__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .header__logo{
+      width: 15rem;
+    }
+    /* el contenido */
+    .main-contenido{
+      width: 100%;
+      margin:0;
+      text-align: center;
+    }
+     
+      .active img{
+        max-width: 100%;
+        margin-left: 20px;
+        
+      }
+      .section-contenido{
+        width: 80%;
+        padding: 0em;
+        padding-top:1.5rem ;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction:column ;
+        align-items: flex-start;
+      }
+      .main-contenido__tittle{
+        text-align: center;
+        font-family: var(--main-title);
+        font-size: 2rem;
+        color: #363636;
+        text-align: start;
+        width: 100%;
+      }
+      .main-contenido__textparra{
+        
+        text-align: start;
+        width: 100%;
+      }
+      .main-contenido__tittle{
+        text-align: center;
+      }
+
+      .main-contenido__line{
+        width: 100%;
+      }
+      .main-contenido__textparra{
+        text-align: center;
+      }
+
+
+      .main-tipos__box{
+        align-items: center;
+      }
+
+      .main-tipos__box h1{
+       
+        text-align: center;
+    }
+
+    /* contact */
+    .main-contact{
+      
+      grid-template-columns: 100%;
+      
+    }
+    .main-contact__img{
+      display: none;
+    }
+    
+      
+
+
+
+  /* parte del footer */
+    .footer-box1{
+      display: none;
+    }
+    .footer{
+      
+      grid-template-columns: 100%;
+      
+      
+    }
+    
+
+    
+
+    
+    
+  /* parte del slider  */
+  .slider-main__title span {
+    font-size: 1rem;
+  }
+  .slider-main__button {
+    background-color: #fff;
+    font-size: 1rem;
+    color: var(--primary-color);
+    padding: .5rem 1.6rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    margin-top: 1rem;
+    letter-spacing: 0.5rem;
+  }
+
+/* especilidad 1 */
+
+/* especialidad 1 */
+.main-espe1__content{
+  
+  grid-template-columns: repeat(auto-fit,300px);
+ 
+}
+    .logo-espe1{
+      width: 5rem;
+    }
+
+   
+  .main-text {
+    display: flex;
+    flex-direction: column ;
+    font-size: 0.5rem;
+
+  }
+  .main-imgesp1 img{
+    align-self: center;
+    width: 500px; 
+    height: 20rem;
+    object-fit: cover;
+  }
+.main-text__title{
+  margin-top: 10px;
+  align-self: center;
+}
+  .main-text__title h1{
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  .main-text__back{
+    width: 50%;
+    border: 2px solid #333;
+    align-self: center;
+  }
+  .main-text p{
+    text-align: center;
+  }
+
+  .titulo{
+    margin-top: 15px;
+  }
+  .titulo-formulario
+  {
+    margin-top: 25px;
+    
+  }
+  /* titulo y logo del formulario */
+  .main-formulario{
+    margin-top: 30px;
+  }
+  .logo-contacto--active{
+    margin-top: 20px;
+    height: 3.2rem;
+    width: 10%;
+  }
+  .titulo-formulario h1{
+    font-size: 3.2rem;
+    
+  }
+  /* .titulo h1 {
+    font-size: 2rem;
+  } */
+  .main-socios{
+    margin-top: 12px;
+    justify-content: center;
+  }
+
+  /* Contacto */
+.main-contenido__general--img{
+  display: none;
+}
+
+.main-contacto-form{
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+  
+.input-box__nombre label{
+  font-family: var(--main-font);
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.celular label{
+  font-family: var(--main-font);
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+.email label{
+  font-family: var(--main-font);
+  
+  margin-left: -10px;
+  
+} 
+
+.input-box__mensaje label{
+  font-family: var(--main-font);
+  margin-bottom: 5px;
+  margin-left: 10px;
+  
+}
+
+
+
+.input-box__nombre input{
+
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0);
+  height: 30px;
+  margin-left: 20px;
+  width: 80%;
+}
+
+.input-box__celularEmail{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  
+  
+  
+}
+
+.celular input{
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0);
+  height: 30px;
+  width: 100%;
+  margin-left: 10px;
+  margin-left: 20px;
+  
+}
+.email input{
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0);
+  height: 30px;
+  margin-left: -10px;
+  width: 117%;
+  
+} 
+.input-box__mensaje label{  
+    margin-left: 20px;
+
+}
+.input-box__mensaje textarea{
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0);
+  /* width: 50%; */
+  margin-left: 20px;
+  height: 100px;
+  width: 81%;
+}
+.main-contacto__formularios{
+  margin-bottom: 50px;
+}
+/* Seccion de primer socio */
+  /* .main-imgesp1 img{
+    height: 100%;
+  } */
+
+
+  .socios-paragraph p{
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .slider-main__whatsapp{
+    right: -10rem;
+  }
+}
+
+
 /*----- MOBILE FIRST */
 /* @media screen and (min-width: 780px) {
   .activaestilosDe780 {
